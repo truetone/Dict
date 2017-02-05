@@ -1,0 +1,23 @@
+{
+    "name": "thoma127/dict",
+    "description": "A simple PHP class for Python dictionary-like functionality.",
+    "type": "library",
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Tony Thomas",
+            "email": "thoma127@umn.edu"
+        }
+    ],
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "UMN\\CEHD\\Dict\\": "src"
+        }
+    }
+}
