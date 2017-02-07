@@ -42,4 +42,13 @@ class DictTest extends TestCase
         $json = json_encode($this->test_data);
         $this->assertEquals($json, $result);
     }
+
+    public function testIsMutable()
+    {
+        $this->dict->baz = "bat";
+        $this->assertEquals("bat", $this->dict->baz);
+
+        $bat = $this->dict->get("baz");
+        $this->assertEquals("bat", $bat);
+    }
 }

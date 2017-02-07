@@ -12,6 +12,14 @@ $dict = new \UMN\CEHD\Dict\Dict($data);
 
 $foo = $dict->get("foo"); // will be "bar"
 $baz = $dict->get("baz"); // will be null
-$json = $dict->toJSON(); // will be "[foo: \"bar\"]" (string)
-$array = $dict->toArray(); // will be ["foo" => "bar"] (array)
+$json = $dict->toJSON(); // will be {"foo":"bar"} (string)
+
+$array = $dict->toArray();
+
+var_dump($array);
+
+array(1) {
+  'foo' =>
+  string(3) "bar"
+}
 ```
