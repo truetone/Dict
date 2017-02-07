@@ -3,6 +3,8 @@
     "description": "A simple PHP class for Python dictionary-like functionality.",
     "type": "library",
     "license": "GPL 3.0",
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
     "authors": [
         {
             "name": "Tony Thomas",
