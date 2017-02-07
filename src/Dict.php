@@ -44,9 +44,9 @@ class Dict
      * @param $name - A class property name
      * @param $value - The data to be stored in the property
      */
-    private function __create_property(string $name, string $value)
+    private function __create_property($name, $value)
     {
-        $this->{$name} = $value;
+        $this->{(string) $name} = (string) $value;
     }
 
     /**
