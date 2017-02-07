@@ -46,7 +46,7 @@ class Dict
      */
     private function __create_property($name, $value)
     {
-        $this->{(string) $name} = (string) $value;
+        $this->{$name} = $value;
     }
 
     /**
