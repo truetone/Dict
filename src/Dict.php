@@ -30,9 +30,9 @@ class Dict
         $this->__array_to_object($data);
     }
 
+    // @todo this does not maintain the structure of the data
     private function __array_to_object($data)
     {
-        // $obj = new stdClass;
         foreach($data as $k => $v)
         {
             if (strlen($k))
@@ -108,6 +108,7 @@ class Dict
      */
     public function get($property_name)
     {
+        var_dump($this);
         if (property_exists($this, $property_name))
         {
           return $this->$property_name;
