@@ -1,0 +1,12 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="Config">
+            <directory>/tests/*Test.php files</directory>
+            <!-- <file>/tests/MyTest.php</file> -->
+            <!-- <exclude>/path/to/exclude</exclude> -->
+        </testsuite>
+    </testsuites>
+    <php>
+        <server name="SERVER_NAME" value="drydock.cehd.umn.edu"/>
+    </php>
+</phpunit>

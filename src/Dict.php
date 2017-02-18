@@ -23,9 +23,30 @@ class Dict
      */
     function __construct(array $data=[])
     {
-        foreach($data as $key => $value)
+        // foreach($data as $key => $value)
+        // {
+        //     $this->__create_property($key, $value);
+        // }
+        $this->__array_to_object($data);
+    }
+
+    private function __array_to_object($data)
+    {
+        // $obj = new stdClass;
+        foreach($data as $k => $v)
         {
-            $this->__create_property($key, $value);
+            if (strlen($k))
+            {
+                if (is_array($v))
+                {
+                    $new_value = $this->__array_to_object($v); //RECURSION
+                    $this->__create_property($k, $new_value);
+                }
+                else
+                {
+                    $this->__create_property($k, $v);
+                }
+            }
         }
     }
 
