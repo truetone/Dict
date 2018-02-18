@@ -2,7 +2,7 @@
     "name": "thoma127/dict",
     "description": "A simple PHP class for Python dictionary-like functionality.",
     "type": "library",
-    "license": "AGPL-3.0-or-later",
+    "license": "GPL-3.0-or-later",
     "minimum-stability" : "dev",
     "prefer-stable" : true,
     "authors": [
